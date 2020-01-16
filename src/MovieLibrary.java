@@ -1,0 +1,18 @@
+public class MovieLibrary {
+    public static void main(String[] args) {
+
+        Movie movie = new Movie();
+        movie.title = "Forrest Gump";
+        movie.description = "Historia życia Forresta, chłopca o niskim ilorazie inteligencji z \n niedowładem kończyn, który staje się miliarderem i bohaterem wojny w Wietnamie.";
+        movie.director = "Robert Zemeckis";
+        movie.rating = 9;
+
+        System.out.println("Informacje o filmie:");
+        System.out.printf("Tytuł: %s\n", movie.title);
+        System.out.printf("Opis: %s\n", movie.description);
+        System.out.printf("Reżyser: %s\n", movie.director);
+        System.out.println("Ocena: " + movie.rating + "/10");
+        System.out.println("Czy otrzymał Oskara:" + " " + movie.oscars);
+
+    }
+}
